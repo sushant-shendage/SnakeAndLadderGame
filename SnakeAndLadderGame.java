@@ -6,6 +6,8 @@ public class SnakeAndLadderGame {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        int gameLoop=0;
+        do{
 
         int playerDiceNumber = 0, playerScore = 0, playerPreScore = 0;
         int computerDiceNumber = 0, computerScore = 0, computerPreScore = 0;
@@ -86,6 +88,12 @@ public class SnakeAndLadderGame {
             System.out.println("-----------------------------------:");
             i = sc.nextInt();
         }
+System.out.println("game over..!");
+        System.out.println("Enter 1 to play agin and 0 to exit ");
+
+       
+        gameLoop=sc.nextInt();
+    } while(gameLoop!=0);
         System.out.println("pgm ended..!");
     }
 
