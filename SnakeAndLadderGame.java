@@ -63,8 +63,8 @@ public class SnakeAndLadderGame {
             }
             if (computerScore == 100) {
                 System.out.println("Computer win the game ..!");
-                System.out.println("[winner] playerScore  :: " + playerScore);
-                System.out.println("[......] computerScore:: " + computerScore);
+                System.out.println("[......] playerScore  :: " + playerScore);
+                System.out.println("[winner] computerScore:: " + computerScore);
                 break;
             }
             // -------------------------------------------------------\\
@@ -103,13 +103,15 @@ public class SnakeAndLadderGame {
             else  if(i==computerScore){
                 System.out.print("[ + ]");   
             }
-            else  if(computerScore==playerScore){
+            else  if(computerScore==playerScore && i==playerScore){
                 System.out.print("[ +,* ]");   
             }
             else {
                 
                 System.out.print("[   ]");   
             }
+
+
             if (i%10==0) {
                 System.out.println();
                 
